@@ -116,6 +116,10 @@ button {
   align-items: center;
   gap: 1rem;
 }
+.companiesSection .sparkle {
+  height: 1.4rem;
+  width: 1.4rem;
+}
 .companiesSection h2 {
   padding: 0;
 }
@@ -127,7 +131,13 @@ button {
 .jobSeekersSection {
   position: relative;
   overflow-x: clip;
-  /* Blurred circle at the bottom right corner */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2rem;
+}
+.jobSeekersSection .btnBlack {
+  align-self: center;
 }
 .jobSeekersSection .circle {
   position: absolute;
@@ -139,14 +149,58 @@ button {
   z-index: -1;
 }
 .jobSeekersSection .leftCircle {
-  bottom: -70px;
   left: -70px;
   transform: translate(50%, -25%);
 }
 .jobSeekersSection .rightCircle {
-  top: -70px;
   right: -70px;
   transform: translate(-50%, 50%);
+}
+.jobSeekersSection .searchBarContainer {
+  display: flex;
+  align-items: center;
+}
+.jobSeekersSection .searchBarContainer .searchBar {
+  z-index: 2;
+}
+.jobSeekersSection .searchBarContainer img {
+  z-index: 3;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-left: -0.5rem;
+}
+.jobSeekersSection .jobSeekersAd {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 0.75rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.jobSeekersSection .jobSeekersAd img {
+  grid-row: 1/span 2;
+}
+.jobSeekersSection .jobSeekersAd span {
+  font-size: 0.5rem;
+  font-weight: 700;
+  background-color: hsl(44, 92%, 90%);
+  border-radius: 25px;
+  padding: 0.15rem;
+}
+.jobSeekersSection .jobSeekersAd h4 {
+  grid-column: 2/span 3;
+  text-align: start;
+}
+.jobSeekersSection .jobSeekersAd p {
+  grid-column: 1/span 4;
+  text-align: start;
+  font-size: 0.65rem;
+}
+.jobSeekersSection .jobSeekersAd .btnBlack {
+  font-size: 0.75rem;
+  height: 1.75rem;
+  width: 5rem;
 }
 
 footer {
