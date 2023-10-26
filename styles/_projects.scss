@@ -1,0 +1,23 @@
+.projects {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: -2rem;
+
+  h2 {
+    position: relative;
+    z-index: 2;
+  }
+
+  .line {
+    position: absolute;
+    transform: translate(20%, 855%);
+    z-index: 1;
+  }
+
+  .projectsCarousel {
+    margin: 2rem 0 4rem;
+  }
+}
