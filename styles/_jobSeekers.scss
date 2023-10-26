@@ -1,0 +1,26 @@
+.jobSeekersSection {
+  position: relative;
+  overflow-x: clip;
+
+  .circle {
+    position: absolute;
+    width: 39rem;
+    height: 39rem;
+    background-color: hsla(44, 91%, 71%, 0.7);
+    border-radius: 50%;
+    filter: blur(75px);
+    z-index: -1;
+  }
+
+  .leftCircle {
+    bottom: -70px;
+    left: -70px;
+    transform: translate(50%, -25%);
+  }
+  /* Blurred circle at the bottom right corner */
+  .rightCircle {
+    top: -70px;
+    right: -70px;
+    transform: translate(-50%, 50%);
+  }
+}

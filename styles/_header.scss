@@ -1,0 +1,40 @@
+.mobileNav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 2rem 3.5rem;
+}
+
+.heroSection {
+  position: relative;
+  overflow-x: clip;
+
+  .circle {
+    position: absolute;
+    width: 39rem;
+    height: 39rem;
+    background-color: hsla(44, 91%, 71%, 0.7);
+    border-radius: 50%;
+    filter: blur(85px);
+    z-index: -2;
+  }
+
+  .leftCircle {
+    top: -70px;
+    left: -70px;
+    transform: translate(-50%, -50%);
+  }
+  /* Blurred circle at the bottom right corner */
+  .rightCircle {
+    bottom: -70px;
+    right: -70px;
+    transform: translate(50%, 35%);
+  }
+
+  p {
+    padding: 2.13rem;
+  }
+
+  .arrow {
+    display: flex;
+  }
+}
